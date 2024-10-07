@@ -21,9 +21,9 @@ spec:
         set -eu
         echo "Removing all files from ${WORKSPACE_SOURCE_PATH} ..."
         if [ -d "${WORKSPACE_SOURCE_PATH}" ] ; then
-            rm -rf "${WORKSPACE_SOURCE_PATH:?}"/*
-            rm -rf "${WORKSPACE_SOURCE_PATH}"/.[!.]*
-            rm -rf "${WORKSPACE_SOURCE_PATH}"/..?*
+          rm -rf "${WORKSPACE_SOURCE_PATH:?}"/*
+          rm -rf "${WORKSPACE_SOURCE_PATH}"/.[!.]*
+          rm -rf "${WORKSPACE_SOURCE_PATH}"/..?*
         fi
 ---
 apiVersion: tekton.dev/v1beta1
